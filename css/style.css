@@ -1,0 +1,130 @@
+.stage {
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  cursor: crosshair;
+  overflow: hidden;
+  background-image: url("../images/stage.jpg");
+  -webkit-box-shadow: 0 10px 20px #000;
+  -moz-box-shadow: 0 10px 20px #000;
+  box-shadow: 0 10px 20px #000;
+}
+
+.stage div {
+  position: relative;
+}
+
+/**
+ * ".stage div" 
+ * Tag name is used inside the class selecter.
+ * Because Two Clouds, Four Hills, Some bunnies and multiple things have a specfic position. (Total 17 objects)
+ * which can't be done using margin & padding. Please allow for these things.
+ */
+
+.cloud_one {
+  left: 225px;
+  top: 18px;
+  height: 58px;
+  z-index: 400;
+  background: url("../images/cloud.png");
+  background-repeat: no-repeat;
+}
+
+.cloud_two {
+  z-index: 201;
+  width: 67px;
+  height: 44px;
+  background: url("../images/cloud2.png");
+}
+
+.hill_one {
+  right: 0;
+  top: 134px;
+  z-index: 100;
+  width: 210px;
+  height: 165px;
+  background: url("../images/hills.png") 0 165px;
+}
+
+.hill_two {
+  top: 22px;
+  width: 347px;
+  height: 112px;
+  background: url("../images/hill.png") -14px 0;
+}
+
+.hill_three {	
+  left: 280px;
+  bottom: 43px;
+  z-index: 102;
+  width: 219px;
+  height: 66px;
+  background: url("../images/hill2.png");
+}
+
+.hill_four {
+  left: 392px;
+  bottom: 182px;
+  width: 409px;
+  height: 138px;
+  background: url("../images/hills.png") 441px 139px;
+}
+
+.hill_four,
+.hill_two{
+  z-index: 101;
+}
+
+.cloud_two,
+.hill_two {
+  left: 75px;
+}
+
+.game {
+  bottom: 300px;
+}
+
+@-webkit-keyframes blink {
+  0% {opacity: 0.1;}
+  20% {opacity: 0.6;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  80% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes blink {
+  0% {opacity: 0.1;}
+  20% {opacity: 0.6;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  80% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+
+@keyframes blink {
+  0% {opacity: 0.1;}
+  20% {opacity: 0.6;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  80% {opacity: 0.3;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 0.1;}
+  50% {opacity: 1;}
+  100% {opacity: 0.1;}
+}
+
+@-moz-keyframes fade {
+  0% {opacity: 0.1;}
+  50% {opacity: 1;}
+  100% {opacity: 0.1;}
+}
+
+@keyframes fade {
+  0% {opacity: 0.1;}
+  50% {opacity: 1;}
+  100% {opacity: 0.1;}
+}
