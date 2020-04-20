@@ -1,5 +1,5 @@
 # Bunny-Hunt
-Classic bunny hunt game.
+The BunnyHunt is a rabbit game, written in pure js, that can be used to play. It generate a new bunny everytime, over shooting with electric current every bunny you will give you a bonus point.
 
 Used Technology
 #HTML
